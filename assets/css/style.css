@@ -52,7 +52,7 @@ body {
   margin: 0 0 15px 18px;
 }
 
-.active-button { 
+.active-button {
   background-color: #84A7C5 !important;
   color: #2A4054 !important;
 }
@@ -143,6 +143,26 @@ body {
   width: 75%;
   margin: 0 36px;
   padding: 10px 18px 6px 6px;
+  position: relative;
+}
+
+.tasks-list ol li span {
+  content: 'x';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  color: #fff;
+  background: tomato;
+  padding: 4px 8px 4px 8px;
+  border-radius: 20px;
+  line-height: 1;
+  opacity: 0;
+  transition: .2s;
+  cursor: pointer
+}
+
+.tasks-list ol li:hover span {
+  opacity: 1;
 }
 
 .divider-task {
